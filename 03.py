@@ -26,7 +26,6 @@ def part_one():
         # Priority is index in concatenated alphabets plus one.
         total += character_priorities.index(shared_item.pop()) + 1
         
-
     return total
 
 
