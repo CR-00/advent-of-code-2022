@@ -33,7 +33,7 @@ def part_one():
 
 def part_two():
 
-    columns = columns = make_columns()
+    columns = make_columns()
 
     for instruction in puzzle_input[10:]:
 
@@ -52,19 +52,3 @@ def part_two():
 if __name__ == "__main__":
     print(f"Part One: {part_one()}")
     print(f"Part Two: {part_two()}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -43,32 +43,3 @@ def part_two():
 if __name__ == "__main__":
     print(f"Part One: {part_one()}")
     print(f"Part Two: {part_two()}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
