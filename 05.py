@@ -5,9 +5,10 @@ puzzle_input = parse_input(day="05")
 
 
 def make_columns():
-    columns = [[], [], [], [], [], [], [], [], []]
+    number_of_cols = max([len(line) for line in puzzle_input]) // 4
+    columns = [[] for _ in range(number_of_cols + 1)]
     for line in puzzle_input[:8]:
-        for i in range(1, 34, 4):
+        for i in range(1, len(line), 4):
             if len(line) > i and line[i] != " ":
                 columns[i // 4].append(line[i])
 
