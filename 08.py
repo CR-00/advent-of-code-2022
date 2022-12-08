@@ -40,7 +40,7 @@ def part_one():
 
 def part_two():
 
-    viewing_distances = []
+    most_trees_visible = 0
 
     for i in range(1, x - 1):
         for j in range(1, y - 1):
@@ -63,12 +63,10 @@ def part_two():
         
                 trees_visible *= k + 1
             
-            viewing_distances += [trees_visible]
-
-    return max(viewing_distances)
-
-
-
+            if trees_visible > most_trees_visible:
+                most_trees_visible = trees_visible
+            
+    return most_trees_visible
 
 
 if __name__ == "__main__":
