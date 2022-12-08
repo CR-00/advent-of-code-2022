@@ -34,6 +34,7 @@ def part_two():
     path = ["/"]
 
     for line in puzzle_input[1:]:
+        print(path)
         if "$ cd" in line:
             directory = line.split()[2]
             if directory == "..":
@@ -46,7 +47,7 @@ def part_two():
 
     deletion_candidates = []
     for v in du.values():
-        if v >= 30000000 - (70000000 - du['/']):
+        if v >= 30000000 - (70000000 - du["/"]):
             deletion_candidates.append(v)
 
     return min(deletion_candidates)
