@@ -23,12 +23,10 @@ def part_one():
 
             operand = int(instruction.split()[1])
 
-            for _ in range(1):
+            cycles += 1
 
-                cycles += 1
-
-                if cycles in signal_intervals:
-                    signal_strengths[cycles] = register
+            if cycles in signal_intervals:
+                signal_strengths[cycles] = register
 
             register += operand
 
